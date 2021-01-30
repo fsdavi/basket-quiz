@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -19,6 +19,10 @@ const Widget = styled.div`
     font-weight: 400;
     line-height: 1;
   }
+
+  .quizes {
+    display: inline-block;
+  }
 `;
 
 Widget.Header = styled.header`
@@ -35,6 +39,10 @@ Widget.Header = styled.header`
 
 Widget.Content = styled.div`
   padding: 24px 32px 32px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   & > *:first-child {
     margin-top: 0;
   }
@@ -44,6 +52,23 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+
+  input {
+    height: 30px;
+    outline: none;
+    border-radius: 4px 0px 0px 4px;
+    border:none;
+    padding-left: 5px;
+  }
+
+  button {
+    height: 30px;
+    border-radius: 0px 4px 4px 0px;
+    background: ${({ theme }) => theme.colors.green};
+    color: #FFF;
+    border: none;
+    outline: none;
   }
 `;
 

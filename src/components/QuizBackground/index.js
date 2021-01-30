@@ -1,5 +1,5 @@
-// src/components/QuizBackground/index.js
 import styled from 'styled-components';
+import Image from 'next/image';
 
 const QuizBackground = styled.div`
   width: 100%;
