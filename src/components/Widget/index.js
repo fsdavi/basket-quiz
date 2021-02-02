@@ -55,20 +55,56 @@ Widget.Content = styled.div`
   }
 
   input {
-    height: 30px;
+    height: 40px;
     outline: none;
     border-radius: 4px 0px 0px 4px;
     border:none;
     padding-left: 5px;
+    background: transparent;
+    border: 1px solid ${({ theme }) => theme.colors.green};
+
+    ${props => props.disabled && css`
+      border: 1px solid #637E91;
+    `};
+    color: #fff;
+
+    ::placeholder {
+      color: #FFF;
+    }
   }
 
   button {
-    height: 30px;
+    height: 40px;
     border-radius: 0px 4px 4px 0px;
     background: ${({ theme }) => theme.colors.green};
     color: #FFF;
     border: none;
     outline: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+
+    ${props => props.disabled && css`
+      background: #637E91;
+    `};
+}
+`;
+
+Widget.Topic = styled.a`
+  outline: 0;
+  text-decoration: none;
+  color: ${({ theme }) => theme.colors.contrastText};
+  background-color: ${({ theme }) => `${theme.colors.primary}40`};
+  padding: 10px 15px;
+  margin-bottom: 8px;
+  cursor: pointer;
+  border-radius: ${({ theme }) => theme.borderRadius};
+  transition: .3s;
+  display: block;
+  
+  &:hover,
+  &:focus {
+    opacity: .5;
   }
 `;
 

@@ -1,6 +1,7 @@
 {
     "title": "Basquete Quiz",
     "description": "Se você acompanha basquete e entende apenas as regras, mas fora isso nada. Seja bem vindo ao pior quiz sobre Basquete da história.",
+    "bg": "https://image.freepik.com/fotos-gratis/jovem-jogando-basquete-com-luzes-legais-com-espaco-de-copia_23-2148536570.jpg",
     "questions": [
         {
             "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",

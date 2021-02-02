@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
@@ -8,21 +7,16 @@ import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
-
-export const QuizContainer = styled.div`
-  width: 100%;
-  max-width: 350px;
-  padding-top: 45px;
-  margin: auto 10% auto auto;
-  @media screen and (max-width: 500px) {
-    margin: auto;
-    padding: 15px;
-  }
-`;
+import QuizContainer from '../src/components/QuizContainer';
 
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    router.push(`/quiz?name=${name}`);
+  }
 
   return (
     <QuizBackground backgroundImage="https://image.freepik.com/fotos-gratis/jovem-jogando-basquete-com-luzes-legais-com-espaco-de-copia_23-2148536570.jpg">
@@ -35,11 +29,8 @@ export default function Home() {
           <Widget.Header>
             <h1>Basquete Quiz</h1>
           </Widget.Header>
-          <Widget.Content>
-            <form onSubmit={(event) => {
-              event.preventDefault();
-              router.push(`/quiz?name=${name}`);
-            }}
+          <Widget.Content disabled={!name}>
+            <form onSubmit={(event) => handleSubmit(event)}
             >
               <input
                 onChange={(event) => {
@@ -47,7 +38,7 @@ export default function Home() {
                 }}
                 placeholder="Diz ai seu nome"
               />
-              <button type="submit" disabled={name.length === 0}>
+              <button type="submit" disabled={!name}>
                 Jogar
               </button>
             </form>
