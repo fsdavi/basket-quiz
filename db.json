@@ -4,25 +4,49 @@
     "bg": "https://image.freepik.com/fotos-gratis/jovem-jogando-basquete-com-luzes-legais-com-espaco-de-copia_23-2148536570.jpg",
     "questions": [
         {
-            "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-            "title": "Como fazer um seletor por id via CSS?",
-            "description": "Essa é pra aquecer",
-            "answer": 2,
+            "image": "https://media.giphy.com/media/O5NyCibf93upy/giphy.gif",
+            "title": "Quem é o maior de todos os tempos",
+            "description": "Essa é fácil.",
+            "answer": 0,
             "alternatives": [
-                ".elemento",
-                "*elemento",
-                "#elemento",
-                "%elemento"
+                "Raulzinho Neto",
+                "Michael Jordan",
+                "Varejão",
+                "Bruno Cabloco"
             ]
         },
         {
-            "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-            "title": "Como fazer um background gradiente com css?",
+            "image": "https://media.giphy.com/media/jpE8OfdJtBHgzN5qRe/giphy.gif",
+            "title": "O knicks ganhou hoje?",
             "description": "Faz tempo em haha",
             "answer": 0,
             "alternatives": [
-                "background: linear-gradient(#e66465, #9198e5);",
-                "background: gradient(#e66465, #9198e5);"
+                "Claro que não.",
+                "Sério?"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/xT1XGwKKgdcLVdSxvW/giphy.gif",
+            "title": "Quantos pontos o Kobe fez no seu último jogo?",
+            "description": "Thank you Kobe.",
+            "answer": 1,
+            "alternatives": [
+                "38 pontos",
+                "60 pontos",
+                "80 pontos",
+                "24 pontos"
+            ]
+        },
+        {
+            "image": "https://media.giphy.com/media/xT4uQfHn1CUGyYsiiY/giphy.gif",
+            "title": "Quantos anéis tem o Lebron James?",
+            "description": "King",
+            "answer": 0,
+            "alternatives": [
+                "4 títulos",
+                "3 e uma viagem na Disney",
+                "Nenhum",
+                "LeFraude carregado pelo Irving e companhia"
             ]
         }
     ],

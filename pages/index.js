@@ -8,10 +8,22 @@ import QuizBackground from '../src/components/QuizBackground';
 import Footer from '../src/components/Footer';
 import GitHubCorner from '../src/components/GitHubCorner';
 import QuizContainer from '../src/components/QuizContainer';
+import Lottie from 'react-lottie';
+import animationData from '../src/assets/lotties/33490-play-basketball.json';
+
 
 export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -42,14 +54,6 @@ export default function Home() {
                 Jogar
               </button>
             </form>
-          </Widget.Content>
-        </Widget>
-
-        <Widget>
-          <Widget.Content className="quizes">
-            <h1>Quizes da Galera</h1>
-
-            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
         <Footer />

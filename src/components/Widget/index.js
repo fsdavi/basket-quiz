@@ -23,6 +23,15 @@ const Widget = styled.div`
   .quizes {
     display: inline-block;
   }
+
+  .questoes {
+    display: inline-block;
+    width: 100%;  
+  }
+
+  .button-confirm {
+    border-radius: 8px !important;
+  }
 `;
 
 Widget.Header = styled.header`
@@ -105,6 +114,12 @@ Widget.Topic = styled.a`
   &:hover,
   &:focus {
     opacity: .5;
+  }
+
+  input {
+    ${(selected) => selected && css`
+      background: ${({ theme }) => theme.colors.green};
+    `};
   }
 `;
 

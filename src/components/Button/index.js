@@ -15,6 +15,8 @@ const Button = styled.button`
   outline: 0;
   transition: .3s;
   cursor: pointer;
+  margin-top: 25px;
+
   &:hover,
   &:focus {
     opacity: .5;
@@ -26,8 +28,8 @@ const Button = styled.button`
 `;
 
 Button.propTypes = {
-    type: PropTypes.oneOf(['submit', 'type', 'button']).isRequired,
-    children: PropTypes.node.isRequired,
+  type: PropTypes.oneOf(['submit', 'type', 'button']).isRequired,
+  children: PropTypes.node.isRequired,
 };
 
 export default Button;
