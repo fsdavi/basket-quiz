@@ -36,13 +36,25 @@ const Widget = styled.div`
 
 Widget.Header = styled.header`
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding: 18px 32px;
   background-color: ${({ theme }) => theme.colors.primary};
   
   * {
     margin: 0;
+  }
+
+  a{
+    align-self: flex-end;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFF !important;
+
+    &:hover {
+      opacity: 0.7;
+    }
   }
 `;
 

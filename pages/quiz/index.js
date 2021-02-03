@@ -59,6 +59,8 @@ function ResultWidget({ results }) {
         <Widget>
             <Widget.Header>
                 Resultado do Quiz
+
+                <a href="/" className="voltar">Voltar</a>
             </Widget.Header>
             <img
                 alt="Descrição"

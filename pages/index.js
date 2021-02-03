@@ -16,15 +16,6 @@ export default function Home() {
   const router = useRouter();
   const [name, setName] = React.useState('');
 
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice"
-    }
-  };
-
   const handleSubmit = (event) => {
     event.preventDefault();
     router.push(`/quiz?name=${name}`);
