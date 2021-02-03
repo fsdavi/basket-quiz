@@ -95,7 +95,7 @@ function QuestionWidget({ question, totalQuestions, questionIndex, onSubmit, add
         <Widget>
             <Widget.Header>
                 <BackLinkArrow href='/' />
-                <h3>
+                <h3 style={{ marginLeft: '20px' }}>
                     {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
                 </h3>
             </Widget.Header>
